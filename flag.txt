@@ -1,0 +1,3 @@
+#By reversing the given strings and deobfuscating the value of $regp
+
+CHTB{maldocs_are_the_new_meta}
