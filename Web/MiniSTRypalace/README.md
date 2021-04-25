@@ -2,8 +2,8 @@
 ---
 ## 0x00 MiniSTRyplace
 ---
-We were given the source code for the website. This was a typical example of directory transversal through PHP webpage.
-! [webpage](s1)
+We were given the source code for this website. This was a typical example of directory transversal through PHP webpage.
+![website](/images/S1)
 ### Solution
 > When we check the source code of the website we see this PHP snippet :
 ```php
