@@ -3,7 +3,7 @@
 ## 0x00 MiniSTRyplace
 ---
 We were given the source code for this website. This was a typical example of directory transversal through PHP webpage.
-![website](/images/S1)
+![website](https://github.com/1n4n0/HTB-Cyber-Apocalypse-2021/edit/main/Web/MiniSTRypalace/images/S1.png)
 ### Solution
 > When we check the source code of the website we see this PHP snippet :
 ```php
