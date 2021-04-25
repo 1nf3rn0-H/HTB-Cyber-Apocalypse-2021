@@ -10,7 +10,7 @@ Basically, Microsoft fies with __.*x__ extension like **.docx**, **.pptx**, **.x
 
 A malicious code (generally in VBA) can be hidden inside these files.
 
-![zip](images/zipGIF.gif)
+![zip](images/zip.gif)
 
 >My first step was to open this ppt file using a zip archive. You can also use **_binwalk_** to extract the data if you are using any Linux based OS, but I will stick to *WinRar*.
 
