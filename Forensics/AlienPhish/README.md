@@ -46,4 +46,4 @@ Everything here makes sense except *some_random_string.exe*.
 
 Decoding it using online [base64 decoder](www.base64decode.org/) gives us the flag.
 
->**Flag :**_CHTB{pH1sHiNg_w0_m4cr0s???}_
+>**Flag :** _CHTB{pH1sHiNg_w0_m4cr0s???}_
