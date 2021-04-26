@@ -4,7 +4,7 @@
 ---
 We were given a ELF64 binary which required a pin.
 
-![gif](images/gif.gif)
+![gif](images/id.gif)
 
 ### Solution
 ---
@@ -16,7 +16,11 @@ This challenge seemed easy initially as it asked for an alien ID and running `st
 
 ![ltrace](images/strings_proof.png)
 
-After entering the ID it asked for a PIN. I repeaded the `strings` and `ltarce` commands but this time I did not find anything. So, I opened `gdb` and tried to debug the program. Ultimately I found the flag but believe be this was very tedious task. So, instead of `gdb`, I fired up `Ghidra`.
+After entering the ID it asked for a PIN. 
+
+![pin](images/pin.gif)
+
+I repeaded the `strings` and `ltarce` commands but this time I did not find anything. So, I opened `gdb` and tried to debug the program. Ultimately I found the flag but believe be this was very tedious task. So, instead of `gdb`, I fired up `Ghidra`.
 
 > After loading the file in `Ghidra`, I opened `main` function and ghidra decompiled it for me  : 
 
