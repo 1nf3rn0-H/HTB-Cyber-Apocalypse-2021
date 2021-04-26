@@ -1,9 +1,7 @@
-## AlienPhish
----
+# AlienPhish
 _We were given a Microsoft Powerpoint Presentation [file](/Alien%20Weaknesses.pptx) with **.pptx** extension._
 
-### **Solution**
----
+## **Solution**
 Basically, Microsoft fies with __.*x__ extension like **.docx**, **.pptx**, **.xlsx**, etc are compressed files, that means they can be opened with any zip archive software. 
 
 A malicious code (generally in VBA) can be hidden inside these files.
@@ -48,5 +46,4 @@ Everything here makes sense except *some_random_string.exe*.
 
 Decoding it using online [base64 decoder](www.base64decode.org/) gives us the flag.
 
->**Flag:**
-*CHTB{pH1sHiNg_w0_m4cr0s???}*
+>**Flag :**_CHTB{pH1sHiNg_w0_m4cr0s???}_
