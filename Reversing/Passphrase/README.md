@@ -1,13 +1,9 @@
-# Reversing
----
-## 0x00 Passphrase
----
+# Passphrase
 We were given an ELF64 [binary](passphrase) which asked for a secret passphrase.
 
 ![gif](gif.gif)
 
-### Solution
----
+## Solution
 This was a simple and straightforward challenge as it asks for a secret phrase which is hidden somewhere within the code. 
 
 So, easy things first, I ran `strings` command on the binary to print all printable characters, but got nothing : (
