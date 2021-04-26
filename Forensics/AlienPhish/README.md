@@ -1,13 +1,13 @@
 # AlienPhish 🎣
 _We were given a Microsoft Powerpoint Presentation [file](/Alien%20Weaknesses.pptx) with **.pptx** extension._
 
-## **Solution**
 Basically, Microsoft fies with __.*x__ extension like **.docx**, **.pptx**, **.xlsx**, etc are compressed files, that means they can be opened with any zip archive software. 
 
 A malicious code (generally in VBA) can be hidden inside these files.
 
 ![zip](images/zip.gif)
 
+## **Solution**
 My first step was to open this ppt file using a zip archive. You can also use `binwalk` to extract the data if you are using any Linux based OS, but I will stick to `WinRar`.
 
 
