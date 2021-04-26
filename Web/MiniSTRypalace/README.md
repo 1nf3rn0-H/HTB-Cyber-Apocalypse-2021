@@ -17,11 +17,12 @@ Clicking on either of the pages from upper right corner of the page gives:
 ```
 Here, it checks if the `GET` parameter is empty or not and then display the webpage. There are two possibilities :
 1. If the `GET` parameter is empty:
- - It will randomly select from the array of two web pages.
+   1. It will randomly select from the array of two web pages.
 
-2. If the `GET` parameter is not empty:
-- It will remove `../` from our passed parameter 
-- Then it will append the `GET` parameter to `pages/{parameter}` and display the page.
+1. If the `GET` parameter is not empty:
+   1. It will remove `../` from our passed parameter 
+   1. Then it will append the `GET` parameter to `pages/{parameter}` and display the page.
+
 
 *To go back from current directory we need `../` but as we can see there is a filter for this.To bypass this filter we can do something like this `....//` as after replacement it would evaluate to `../`*
 
