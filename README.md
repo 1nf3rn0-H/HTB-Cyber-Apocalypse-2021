@@ -14,4 +14,4 @@ These challenges explored almost all topics required to start with cybersecurity
 ### 6. [Misc](Misc)  🐱‍👤 
 
 ## 📈 Conclusion
-This CTF gave an opportunity to learn a lot and explore almost all kinds of fields. I loved **reverse engineering** and **forensics** categories. I had no idea about hardware challenges and now this has given me an opportunity to learn hardware. Also, it reflected how much I know and where I stand; still a lot to learn!
+This CTF gave an opportunity to learn a lot and explore almost all kinds of fields. I loved **reverse engineering** and **forensics**, especially the one which was a typical malware analysis challenge ([Invitation](Forensics/Invitation)). I had no idea about hardware challenges and now this has given me an opportunity to learn hardware. Also, it reflected how much I know and where I stand; still a lot to learn!
