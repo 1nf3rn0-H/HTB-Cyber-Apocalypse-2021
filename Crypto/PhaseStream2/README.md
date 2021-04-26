@@ -1,9 +1,7 @@
 # PhaseStream3
----
 _We were given an [output.txt](output.txt) which contained 10,000 lines of XOR'd cipher using **single-byte key**._
 
 ## Solution
----
 As we know that single byte in hex is:
 >0x00 - 0xFF
 
@@ -67,7 +65,7 @@ with open('ana.txt',"a") as fil:
 	fil.close()
 ```
 
-This will take some time as we are bruteforcing the key.
+This gives out the flag.
 
 ![output](S0.jpg)
 
