@@ -1,7 +1,7 @@
 # Passphrase
 We were given an ELF64 [binary](passphrase) which asked for a secret passphrase.
 
-![gif](gif.gif)
+![gif](pass.gif)
 
 ## Solution
 This was a simple and straightforward challenge as it asks for a secret phrase which is hidden somewhere within the code. 
