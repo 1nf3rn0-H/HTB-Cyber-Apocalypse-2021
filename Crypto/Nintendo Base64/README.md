@@ -1,4 +1,4 @@
-# Nintendo Base64
+# Nintendo Base64 🎮
 We were given a [file](output.txt) containing base64 encoded data.
 
 ![file](images/base64.png)
