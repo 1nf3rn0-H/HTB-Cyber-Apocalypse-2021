@@ -23,9 +23,7 @@ Here, it checks if the `GET` parameter is empty or not and then display the webp
 - It will remove `../` from our passed parameter 
 - Then it will append the `GET` parameter to `pages/{parameter}` and display the page.
 
-To go back from current directory we need `../` but as we can see there is a filter for this.
-
-To bypass this filter we can do something like this `....//` as after replacement it would evaluate to `../`
+*To go back from current directory we need `../` but as we can see there is a filter for this.To bypass this filter we can do something like this `....//` as after replacement it would evaluate to `../`*
 
 Now we need to know where the flag is located, so we check the `Dockerfile` which was provided along with the source code and found this:
 ```docker
