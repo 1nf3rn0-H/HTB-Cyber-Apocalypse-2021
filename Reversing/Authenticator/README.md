@@ -1,11 +1,9 @@
 # Authenticator
----
 We were given a ELF64 binary which required a pin.
 
 ![gif](images/id.gif)
 
 ## Solution
----
 This challenge seemed easy initially as it asked for an alien ID and running `strings` on the binary gave us the ID.
 
 ![strings](images/strings.png)
