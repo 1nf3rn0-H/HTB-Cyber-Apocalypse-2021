@@ -41,7 +41,7 @@ for i in x:
 print(ans)
 ```
 
-This gave me _rguy_
+This gave me *th3_auth3nt1c4t10n_5y5t3m_15_n0t_50_53cur3*
 
-> **Flag** : _CHTB{}_
+> **Flag** : _CHTB{th3_auth3nt1c4t10n_5y5t3m_15_n0t_50_53cur3}_
 
