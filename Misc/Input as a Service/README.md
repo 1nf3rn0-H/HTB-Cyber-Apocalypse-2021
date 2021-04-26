@@ -7,8 +7,7 @@
 ---
 I Used `netcat` to connect to the server, it was running a python binary which was taking two inputs.
 
->I tried few things and found that it was using `exec()` function.
->I tried using `dir()` which resulted into: 
+>I tried few things and found that it was using `exec()` function so I tried using `dir()` which resulted into: 
 
 ![pyout](images/S2.jpg)
 
