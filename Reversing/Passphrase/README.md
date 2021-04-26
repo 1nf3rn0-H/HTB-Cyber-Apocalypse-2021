@@ -1,4 +1,4 @@
-# Passphrase
+# Passphrase 🙊
 We were given an ELF64 [binary](passphrase) which asked for a secret passphrase.
 
 ![gif](pass.gif)
