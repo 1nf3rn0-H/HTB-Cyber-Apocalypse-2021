@@ -27,4 +27,4 @@ __import__(os).system("cat flag.txt")
 
 ![flag](images/S4.jpg)
 
->**Flag : **_CHTB{4li3n5_us3_pyth0n2.X?!}_
+>**Flag :** _CHTB{4li3n5_us3_pyth0n2.X?!}_
