@@ -1,13 +1,13 @@
 # Invitation ✉
 _We were given [this](forensics_invitation.zip) Microsoft word file with **.docm** file extension._
 
-## Solution
 Basically, Microsoft fies with __.*x__ extension like **.docx**, **.pptx**, **.xlsx**, etc are compressed files, that means they can be opened with any zip archive software. Since, the extension is **.docm**, it clearly shows that it contains macros.  
 
 ![gif](images/zipGIF.gif)
 
 A malicious code (generally in VBA) can be hidden inside these files.
 
+## Solution
 *My first step was to extract macros form this file. We can use oletools but I will be using an online tool called [OnlineHashCrack](https://www.onlinehashcrack.com/tools-online-extract-vba-from-office-word-excel.php).*
 
 ![online_out](images/S0.jpg)
