@@ -4,7 +4,7 @@
 ---
 We were given a [file](output.txt) containing base64 encoded data.
 
-![file](images/fil.png)
+![file](images/base64.png)
 
 ### Solution
 ---
