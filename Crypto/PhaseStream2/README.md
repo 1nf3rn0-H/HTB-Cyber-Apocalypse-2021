@@ -1,4 +1,4 @@
-# PhaseStream3
+# PhaseStream3 🔒
 _We were given an [output.txt](output.txt) which contained 10,000 lines of XOR'd cipher using **single-byte key**._
 
 ## Solution
