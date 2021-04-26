@@ -1,9 +1,8 @@
-# **Cryptography**
-## 0x00 PhaseStream3
-
+# PhaseStream3
+---
 _We were given an [output.txt](output.txt) which contained 10,000 lines of XOR'd cipher using **single-byte key**._
 
-### **Solution**
+## Solution
 ---
 As we know that single byte in hex is:
 >0x00 - 0xFF
@@ -12,8 +11,6 @@ In decimal:
 >0 - 255
 
 So now, we will make a script which will iterate through all possible single byte values and decrypt the cipher.
-
->This is a simple challenge as we can simply brute-force the key using a python script.
 
 ```python
 def decrypt(message_bytes, key):
@@ -70,15 +67,8 @@ with open('ana.txt',"a") as fil:
 	fil.close()
 ```
 
->This will take some time as we are bruteforcing the key. After 5 minutes, the flag is found.
+This will take some time as we are bruteforcing the key. After 5 minutes, the flag is found.
 
 ![output](S0.jpg)
 
-**Flag:**
->CHTB{n33dl3_1n_4_h4yst4ck}
-
-
-
-
-
-
+> **Flag:** CHTB{n33dl3_1n_4_h4yst4ck}
