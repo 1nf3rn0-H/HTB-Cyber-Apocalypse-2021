@@ -14,7 +14,7 @@ This challenge seemed easy initially as it asked for an alien ID and running `st
 
 > Also, just to be sure I ran `ltrace` on it and confirmed the ID.
 
-![ltrace](images/ltrace.png)
+![ltrace](images/strings_proof.png)
 
 After entering the ID it asked for a PIN. I repeaded the `strings` and `ltarce` commands but this time I did not find anything. So, I opened `gdb` and tried to debug the program. Ultimately I found the flag but believe be this was very tedious task. So, instead of `gdb`, I fired up `Ghidra`.
 
