@@ -1,4 +1,4 @@
-# Authenticator
+# Authenticator ⚠
 We were given a ELF64 binary which required a pin.
 
 ![gif](images/id.gif)
