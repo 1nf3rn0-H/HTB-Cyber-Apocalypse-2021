@@ -1,4 +1,4 @@
-# Invitation
+# Invitation ✉
 _We were given [this](forensics_invitation.zip) Microsoft word file with **.docm** file extension._
 
 ## Solution
