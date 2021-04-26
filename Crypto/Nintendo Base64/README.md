@@ -12,7 +12,7 @@ As the name suggests, the encoded data is in base64 format. So, I copied the dat
 
 > It gave out another base64 encoded string, so I did it again.
 
-Again, it gave me base64 encoded string. So, I thought to automate this process by writing a simple bash script.
+Again, it gave me base64 encoded string. Then I realised that it is encoded 8 times as we can see in the images. So, I thought to automate this process by writing a simple bash script.
 
 ```bash
 encoded_text="Vm0xNFlWVXhSWGxUV0doWVlrZFNWRmx0ZUdGalZsSlZWR3RPYWxKdGVIcFdiR2h2VkdzeFdGVnViRmRXTTFKeVdWUkdZV1JGT1ZWVmJGWk9WakpvV1ZaclpEUlVNVWw0Vkc1U1RsWnNXbGhWYkZKWFUxWmFSMWRzV2s1V2F6VkpWbTEwYjFkSFNsbFZiRkpXWWtaYU0xcEZXbUZTTVZaeVkwVTFWMDFHYjNkV2EyTXhWakpHVjFScmFGWmlhM0JYV1ZSR1lWZEdVbFZTYms1clVsUldTbGRyV2tkV2JGcEZVVlJWUFE9PQ=="
