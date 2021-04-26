@@ -1,8 +1,7 @@
 # Invitation
----
 _We were given [this](forensics_invitation.zip) Microsoft word file with **.docm** file extension._
+
 ## Solution
----
 Basically, Microsoft fies with __.*x__ extension like **.docx**, **.pptx**, **.xlsx**, etc are compressed files, that means they can be opened with any zip archive software. Since, the extension is **.docm**, it clearly shows that it contains macros.  
 
 ![gif](images/zipGIF.gif)
@@ -143,6 +142,5 @@ $regn = "_the_new_meta}";
 
 >Flag 2 : _the_new_meta
 
->**Flag**:\
-_CHTB{maldocs_are_the_new_meta}_
+>**Flag :**_CHTB{maldocs_are_the_new_meta}_
 
