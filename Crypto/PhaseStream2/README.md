@@ -67,7 +67,7 @@ with open('ana.txt',"a") as fil:
 	fil.close()
 ```
 
-This will take some time as we are bruteforcing the key. After 5 minutes, the flag is found.
+This will take some time as we are bruteforcing the key.
 
 ![output](S0.jpg)
 
