@@ -69,4 +69,4 @@ This gives out the flag.
 
 ![output](S0.jpg)
 
-> **Flag:** CHTB{n33dl3_1n_4_h4yst4ck}
+> **Flag :** _CHTB{n33dl3_1n_4_h4yst4ck}_
