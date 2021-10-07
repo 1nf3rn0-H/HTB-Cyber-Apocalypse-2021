@@ -24,7 +24,7 @@ I repeaded the `strings` and `ltarce` commands but this time I did not find anyt
 
 *As we can see the decompiled code, it checks our previously found ID and then calls a function called `checkpin`. So I go to the `checkpin` function's defination.*
 
-![checkpin](images/checkpin.png)
+![checkpin](https://github.com/1n40/HTB-Cyber-Apocalypse-2021/blob/main/Reversing/Authenticator/images/chekpin.png?raw=true)
 
 *We can see that the each byte of the string is being XOR'd with "9". So I created a simple python script :*
 
